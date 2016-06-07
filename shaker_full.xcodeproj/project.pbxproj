@@ -1,0 +1,713 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E06738DC1D0039890042376A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06738DB1D0039890042376A /* AppDelegate.swift */; };
+		E06738DE1D0039890042376A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06738DD1D0039890042376A /* ViewController.swift */; };
+		E06738E11D0039890042376A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E06738DF1D0039890042376A /* Main.storyboard */; };
+		E06738E31D0039890042376A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E06738E21D0039890042376A /* Assets.xcassets */; };
+		E06738E61D0039890042376A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E06738E41D0039890042376A /* LaunchScreen.storyboard */; };
+		E0DA41E91D0713DB00C189FB /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0EAFFB51D05D9C0009D0FCB /* Alamofire.framework */; };
+		E0DA41EA1D0713DB00C189FB /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0EAFFCC1D05D9C0009D0FCB /* Moya.framework */; };
+		E0DA41EB1D0713DB00C189FB /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0EAFFE31D05D9C0009D0FCB /* Result.framework */; };
+		E0DA41EC1D0713DB00C189FB /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0EAFFE41D05D9C0009D0FCB /* RxCocoa.framework */; };
+		E0DA41ED1D0713DB00C189FB /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0EAFFE51D05D9C0009D0FCB /* RxSwift.framework */; };
+		E0DA41F11D0713DB00C189FB /* NSObject_Rx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DA41EE1D0713DB00C189FB /* NSObject_Rx.framework */; };
+		E0DA41F21D0713DB00C189FB /* Pods_Shaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DA41EF1D0713DB00C189FB /* Pods_Shaker.framework */; };
+		E0DA41F31D0713DB00C189FB /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DA41F01D0713DB00C189FB /* SwiftyJSON.framework */; };
+		E0EA002F1D05DD69009D0FCB /* AppSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EA002E1D05DD69009D0FCB /* AppSetup.swift */; };
+		E0EA00311D06E7FC009D0FCB /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EA00301D06E7FC009D0FCB /* Networking.swift */; };
+		E0EAFFB21D05C0D1009D0FCB /* ShakerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EAFFB11D05C0D1009D0FCB /* ShakerAPI.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C4929E8616AC9128B34D0D7 /* Pods-Shaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shaker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shaker/Pods-Shaker.release.xcconfig"; sourceTree = "<group>"; };
+		35A2089D2A8229D420EA4B7F /* Pods-Shaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shaker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shaker/Pods-Shaker.debug.xcconfig"; sourceTree = "<group>"; };
+		E06738D81D0039890042376A /* Shaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E06738DB1D0039890042376A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E06738DD1D0039890042376A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../shaker_full/ViewController.swift; sourceTree = "<group>"; };
+		E06738E01D0039890042376A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E06738E21D0039890042376A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E06738E51D0039890042376A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E06738E71D0039890042376A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E06738F21D0041F40042376A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E06738F41D0042040042376A /* shaker_full.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = shaker_full.entitlements; sourceTree = "<group>"; };
+		E07628A1BB431DF5484923E8 /* Pods_Shaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0DA41EE1D0713DB00C189FB /* NSObject_Rx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NSObject_Rx.framework; path = "../../../Library/Developer/Xcode/DerivedData/shaker_full-btinkcwqybecfhdfzhsqshfxlyux/Build/Products/Debug-iphonesimulator/NSObject+Rx/NSObject_Rx.framework"; sourceTree = "<group>"; };
+		E0DA41EF1D0713DB00C189FB /* Pods_Shaker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Shaker.framework; path = "../../../Library/Developer/Xcode/DerivedData/shaker_full-btinkcwqybecfhdfzhsqshfxlyux/Build/Products/Debug-iphonesimulator/Pods_Shaker.framework"; sourceTree = "<group>"; };
+		E0DA41F01D0713DB00C189FB /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../Library/Developer/Xcode/DerivedData/shaker_full-btinkcwqybecfhdfzhsqshfxlyux/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		E0EA002E1D05DD69009D0FCB /* AppSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSetup.swift; sourceTree = "<group>"; };
+		E0EA00301D06E7FC009D0FCB /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		E0EAFFB11D05C0D1009D0FCB /* ShakerAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakerAPI.swift; sourceTree = "<group>"; };
+		E0EAFFB31D05D9C0009D0FCB /* AFgzipRequestSerializer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFgzipRequestSerializer.framework; path = "../../../Library/Developer/Xcode/DerivedData/shaker_full-btinkcwqybecfhdfzhsqshfxlyux/Build/Products/Debug-iphonesimulator/AFgzipRequestSerializer/AFgzipRequestSerializer.framework"; sourceTree = "<group>"; };
+		E0EAFFB41D05D9C0009D0FCB /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "../../../Library/Developer/Xcode/DerivedData/shaker_full-btinkcwqybecfhdfzhsqshfxlyux/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework"; sourceTree = "<group>"; };
+		E0EAFFB51D05D9C0009D0FCB /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/shaker_full-btinkcwqybecfhdfzhsqshfxlyux/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		E0EAFFB61D05D9C0009D0FCB /* AMScrollingNavbar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMScrollingNavbar.framework; path = "../../../Library/Developer/Xcode/DerivedData/shaker_full-btinkcwqybecfhdfzhsqshfxlyux/Build/Products/Debug-iphonesimulator/AMScrollingNavbar/AMScrollingNavbar.framework"; sourceTree = "<group>"; };
+		E0EAFFB71D05D9C0009D0FCB /* BEMSimpleLineGraph.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BEMSimpleLineGraph.framework; path = "../../../Library/Developer/Xcode/DerivedData/shaker_full-btinkcwqybecfhdfzhsqshfxlyux/Build/Products/Debug-iphonesimulator/BEMSimpleLineGraph/BEMSimpleLineGraph.framework"; sourceTree = "<group>"; };
+		E0EAFFB81D05D9C0009D0FCB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Library/Developer/Xcode/DerivedData/shaker_full-btinkcwqybecfhdfzhsqshfxlyux/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework"; sourceTree = "<group>"; };
+		E0EAFFB91D05D9C0009D0FCB /* CountryPicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CountryPicker.framework; path = "Pods/../build/Debug-iphoneos/CountryPicker/CountryPicker.framework"; sourceTree = "<group>"; };
+		E0EAFFBA1D05D9C0009D0FCB /* CRToast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CRToast.framework; path = "../../../Library/Developer/Xcode/DerivedData/shaker_full-btinkcwqybecfhdfzhsqshfxlyux/Build/Products/Debug-iphonesimulator/CRToast/CRToast.framework"; sourceTree = "<group>"; };
+		E0EAFFBB1D05D9C0009D0FCB /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/shaker_full-btinkcwqybecfhdfzhsqshfxlyux/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		E0EAFFBC1D05D9C0009D0FCB /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "Pods/../build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		E0EAFFBD1D05D9C0009D0FCB /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "Pods/../build/Debug-iphoneos/FBSDKShareKit/FBSDKShareKit.framework"; sourceTree = "<group>"; };
+		E0EAFFBE1D05D9C0009D0FCB /* FLAnimatedImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLAnimatedImage.framework; path = "Pods/../build/Debug-iphoneos/FLAnimatedImage/FLAnimatedImage.framework"; sourceTree = "<group>"; };
+		E0EAFFBF1D05D9C0009D0FCB /* FLKAutoLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLKAutoLayout.framework; path = "Pods/../build/Debug-iphoneos/FLKAutoLayout/FLKAutoLayout.framework"; sourceTree = "<group>"; };
+		E0EAFFC01D05D9C0009D0FCB /* FMDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FMDB.framework; path = "Pods/../build/Debug-iphoneos/FMDB/FMDB.framework"; sourceTree = "<group>"; };
+		E0EAFFC11D05D9C0009D0FCB /* GDIIndexBar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GDIIndexBar.framework; path = "Pods/../build/Debug-iphoneos/GDIIndexBar/GDIIndexBar.framework"; sourceTree = "<group>"; };
+		E0EAFFC21D05D9C0009D0FCB /* Godzippa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Godzippa.framework; path = "../../../Library/Developer/Xcode/DerivedData/shaker_full-btinkcwqybecfhdfzhsqshfxlyux/Build/Products/Debug-iphonesimulator/Godzippa/Godzippa.framework"; sourceTree = "<group>"; };
+		E0EAFFC31D05D9C0009D0FCB /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GPUImage.framework; path = "Pods/../build/Debug-iphoneos/GPUImage/GPUImage.framework"; sourceTree = "<group>"; };
+		E0EAFFC41D05D9C0009D0FCB /* JSONKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSONKit.framework; path = "Pods/../build/Debug-iphoneos/JSONKit/JSONKit.framework"; sourceTree = "<group>"; };
+		E0EAFFC51D05D9C0009D0FCB /* JXHTTP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JXHTTP.framework; path = "Pods/../build/Debug-iphoneos/JXHTTP/JXHTTP.framework"; sourceTree = "<group>"; };
+		E0EAFFC61D05D9C0009D0FCB /* libPhoneNumber_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libPhoneNumber_iOS.framework; path = "../../../Library/Developer/Xcode/DerivedData/shaker_full-btinkcwqybecfhdfzhsqshfxlyux/Build/Products/Debug-iphonesimulator/libPhoneNumber-iOS/libPhoneNumber_iOS.framework"; sourceTree = "<group>"; };
+		E0EAFFC71D05D9C0009D0FCB /* LinqToObjectiveC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LinqToObjectiveC.framework; path = "Pods/../build/Debug-iphoneos/LinqToObjectiveC/LinqToObjectiveC.framework"; sourceTree = "<group>"; };
+		E0EAFFC81D05D9C0009D0FCB /* MACircleProgressIndicator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MACircleProgressIndicator.framework; path = "Pods/../build/Debug-iphoneos/MACircleProgressIndicator/MACircleProgressIndicator.framework"; sourceTree = "<group>"; };
+		E0EAFFC91D05D9C0009D0FCB /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Masonry.framework; path = "Pods/../build/Debug-iphoneos/Masonry/Masonry.framework"; sourceTree = "<group>"; };
+		E0EAFFCA1D05D9C0009D0FCB /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBProgressHUD.framework; path = "Pods/../build/Debug-iphoneos/MBProgressHUD/MBProgressHUD.framework"; sourceTree = "<group>"; };
+		E0EAFFCB1D05D9C0009D0FCB /* MGSwipeTableCell.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MGSwipeTableCell.framework; path = "Pods/../build/Debug-iphoneos/MGSwipeTableCell/MGSwipeTableCell.framework"; sourceTree = "<group>"; };
+		E0EAFFCC1D05D9C0009D0FCB /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = "../../../Library/Developer/Xcode/DerivedData/shaker_full-btinkcwqybecfhdfzhsqshfxlyux/Build/Products/Debug-iphonesimulator/Moya/Moya.framework"; sourceTree = "<group>"; };
+		E0EAFFCD1D05D9C0009D0FCB /* NHAppCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NHAppCore.framework; path = "Pods/../build/Debug-iphoneos/NHAppCore/NHAppCore.framework"; sourceTree = "<group>"; };
+		E0EAFFCE1D05D9C0009D0FCB /* NHBottomLoadingView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NHBottomLoadingView.framework; path = "Pods/../build/Debug-iphoneos/NHBottomLoadingView/NHBottomLoadingView.framework"; sourceTree = "<group>"; };
+		E0EAFFCF1D05D9C0009D0FCB /* NHImageViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NHImageViewController.framework; path = "Pods/../build/Debug-iphoneos/NHImageViewController/NHImageViewController.framework"; sourceTree = "<group>"; };
+		E0EAFFD01D05D9C0009D0FCB /* NHLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NHLabel.framework; path = "Pods/../build/Debug-iphoneos/NHLabel/NHLabel.framework"; sourceTree = "<group>"; };
+		E0EAFFD11D05D9C0009D0FCB /* NHMapViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NHMapViewController.framework; path = "Pods/../build/Debug-iphoneos/NHMapViewController/NHMapViewController.framework"; sourceTree = "<group>"; };
+		E0EAFFD21D05D9C0009D0FCB /* NHMessageBubbleCell.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NHMessageBubbleCell.framework; path = "Pods/../build/Debug-iphoneos/NHMessageBubbleCell/NHMessageBubbleCell.framework"; sourceTree = "<group>"; };
+		E0EAFFD31D05D9C0009D0FCB /* NHMultipleImageView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NHMultipleImageView.framework; path = "Pods/../build/Debug-iphoneos/NHMultipleImageView/NHMultipleImageView.framework"; sourceTree = "<group>"; };
+		E0EAFFD41D05D9C0009D0FCB /* NHRecorder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NHRecorder.framework; path = "Pods/../build/Debug-iphoneos/NHRecorder/NHRecorder.framework"; sourceTree = "<group>"; };
+		E0EAFFD51D05D9C0009D0FCB /* NHRefreshView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NHRefreshView.framework; path = "Pods/../build/Debug-iphoneos/NHRefreshView/NHRefreshView.framework"; sourceTree = "<group>"; };
+		E0EAFFD61D05D9C0009D0FCB /* NHSearchController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NHSearchController.framework; path = "Pods/../build/Debug-iphoneos/NHSearchController/NHSearchController.framework"; sourceTree = "<group>"; };
+		E0EAFFD71D05D9C0009D0FCB /* NHSelectorView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NHSelectorView.framework; path = "Pods/../build/Debug-iphoneos/NHSelectorView/NHSelectorView.framework"; sourceTree = "<group>"; };
+		E0EAFFD81D05D9C0009D0FCB /* NHTextField.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NHTextField.framework; path = "Pods/../build/Debug-iphoneos/NHTextField/NHTextField.framework"; sourceTree = "<group>"; };
+		E0EAFFD91D05D9C0009D0FCB /* NHTimer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NHTimer.framework; path = "Pods/../build/Debug-iphoneos/NHTimer/NHTimer.framework"; sourceTree = "<group>"; };
+		E0EAFFDA1D05D9C0009D0FCB /* NHTutorialView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NHTutorialView.framework; path = "Pods/../build/Debug-iphoneos/NHTutorialView/NHTutorialView.framework"; sourceTree = "<group>"; };
+		E0EAFFDB1D05D9C0009D0FCB /* NHWebViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NHWebViewController.framework; path = "Pods/../build/Debug-iphoneos/NHWebViewController/NHWebViewController.framework"; sourceTree = "<group>"; };
+		E0EAFFDC1D05D9C0009D0FCB /* NMessengerController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NMessengerController.framework; path = "Pods/../build/Debug-iphoneos/NMessengerController/NMessengerController.framework"; sourceTree = "<group>"; };
+		E0EAFFDD1D05D9C0009D0FCB /* NPageController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NPageController.framework; path = "Pods/../build/Debug-iphoneos/NPageController/NPageController.framework"; sourceTree = "<group>"; };
+		E0EAFFDE1D05D9C0009D0FCB /* NTextView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NTextView.framework; path = "Pods/../build/Debug-iphoneos/NTextView/NTextView.framework"; sourceTree = "<group>"; };
+		E0EAFFDF1D05D9C0009D0FCB /* ORStackView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ORStackView.framework; path = "Pods/../build/Debug-iphoneos/ORStackView/ORStackView.framework"; sourceTree = "<group>"; };
+		E0EAFFE01D05D9C0009D0FCB /* PulsingHalo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PulsingHalo.framework; path = "Pods/../build/Debug-iphoneos/PulsingHalo/PulsingHalo.framework"; sourceTree = "<group>"; };
+		E0EAFFE11D05D9C0009D0FCB /* Reachability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reachability.framework; path = "Pods/../build/Debug-iphoneos/Reachability/Reachability.framework"; sourceTree = "<group>"; };
+		E0EAFFE21D05D9C0009D0FCB /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = "Pods/../build/Debug-iphoneos/ReactiveCocoa/ReactiveCocoa.framework"; sourceTree = "<group>"; };
+		E0EAFFE31D05D9C0009D0FCB /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "../../../Library/Developer/Xcode/DerivedData/shaker_full-btinkcwqybecfhdfzhsqshfxlyux/Build/Products/Debug-iphonesimulator/Result/Result.framework"; sourceTree = "<group>"; };
+		E0EAFFE41D05D9C0009D0FCB /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = "../../../Library/Developer/Xcode/DerivedData/shaker_full-btinkcwqybecfhdfzhsqshfxlyux/Build/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework"; sourceTree = "<group>"; };
+		E0EAFFE51D05D9C0009D0FCB /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = "../../../Library/Developer/Xcode/DerivedData/shaker_full-btinkcwqybecfhdfzhsqshfxlyux/Build/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework"; sourceTree = "<group>"; };
+		E0EAFFE61D05D9C0009D0FCB /* SocketRocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketRocket.framework; path = "Pods/../build/Debug-iphoneos/SocketRocket/SocketRocket.framework"; sourceTree = "<group>"; };
+		E0EAFFE71D05D9C0009D0FCB /* Spectacles.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spectacles.framework; path = "Pods/../build/Debug-iphoneos/Spectacles/Spectacles.framework"; sourceTree = "<group>"; };
+		E0EAFFE81D05D9C0009D0FCB /* TMTumblrSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TMTumblrSDK.framework; path = "Pods/../build/Debug-iphoneos/TMTumblrSDK/TMTumblrSDK.framework"; sourceTree = "<group>"; };
+		E0EAFFE91D05D9C0009D0FCB /* TTTAttributedLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TTTAttributedLabel.framework; path = "Pods/../build/Debug-iphoneos/TTTAttributedLabel/TTTAttributedLabel.framework"; sourceTree = "<group>"; };
+		E0EAFFEA1D05D9C1009D0FCB /* UIActionSheet_Blocks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIActionSheet_Blocks.framework; path = "Pods/../build/Debug-iphoneos/UIActionSheet+Blocks/UIActionSheet_Blocks.framework"; sourceTree = "<group>"; };
+		E0EAFFEB1D05D9C1009D0FCB /* UIAlertView_Blocks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIAlertView_Blocks.framework; path = "Pods/../build/Debug-iphoneos/UIAlertView+Blocks/UIAlertView_Blocks.framework"; sourceTree = "<group>"; };
+		E0EAFFEC1D05D9C1009D0FCB /* UICKeyChainStore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UICKeyChainStore.framework; path = "Pods/../build/Debug-iphoneos/UICKeyChainStore/UICKeyChainStore.framework"; sourceTree = "<group>"; };
+		E0EAFFED1D05D9C1009D0FCB /* VK_ios_sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VK_ios_sdk.framework; path = "Pods/../build/Debug-iphoneos/VK-ios-sdk/VK_ios_sdk.framework"; sourceTree = "<group>"; };
+		E0EAFFEE1D05D9C1009D0FCB /* WCFastCell.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WCFastCell.framework; path = "Pods/../build/Debug-iphoneos/WCFastCell/WCFastCell.framework"; sourceTree = "<group>"; };
+		E0EAFFEF1D05D9C1009D0FCB /* WYPopoverController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WYPopoverController.framework; path = "Pods/../build/Debug-iphoneos/WYPopoverController/WYPopoverController.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E06738D51D0039890042376A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0DA41F11D0713DB00C189FB /* NSObject_Rx.framework in Frameworks */,
+				E0DA41F21D0713DB00C189FB /* Pods_Shaker.framework in Frameworks */,
+				E0DA41F31D0713DB00C189FB /* SwiftyJSON.framework in Frameworks */,
+				E0DA41E91D0713DB00C189FB /* Alamofire.framework in Frameworks */,
+				E0DA41EA1D0713DB00C189FB /* Moya.framework in Frameworks */,
+				E0DA41EB1D0713DB00C189FB /* Result.framework in Frameworks */,
+				E0DA41EC1D0713DB00C189FB /* RxCocoa.framework in Frameworks */,
+				E0DA41ED1D0713DB00C189FB /* RxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		668DC6C5894B2025E5483BDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0DA41EE1D0713DB00C189FB /* NSObject_Rx.framework */,
+				E0DA41EF1D0713DB00C189FB /* Pods_Shaker.framework */,
+				E0DA41F01D0713DB00C189FB /* SwiftyJSON.framework */,
+				E0EAFFB31D05D9C0009D0FCB /* AFgzipRequestSerializer.framework */,
+				E0EAFFB41D05D9C0009D0FCB /* AFNetworking.framework */,
+				E0EAFFB51D05D9C0009D0FCB /* Alamofire.framework */,
+				E0EAFFB61D05D9C0009D0FCB /* AMScrollingNavbar.framework */,
+				E0EAFFB71D05D9C0009D0FCB /* BEMSimpleLineGraph.framework */,
+				E0EAFFB81D05D9C0009D0FCB /* Bolts.framework */,
+				E0EAFFB91D05D9C0009D0FCB /* CountryPicker.framework */,
+				E0EAFFBA1D05D9C0009D0FCB /* CRToast.framework */,
+				E0EAFFBB1D05D9C0009D0FCB /* FBSDKCoreKit.framework */,
+				E0EAFFBC1D05D9C0009D0FCB /* FBSDKLoginKit.framework */,
+				E0EAFFBD1D05D9C0009D0FCB /* FBSDKShareKit.framework */,
+				E0EAFFBE1D05D9C0009D0FCB /* FLAnimatedImage.framework */,
+				E0EAFFBF1D05D9C0009D0FCB /* FLKAutoLayout.framework */,
+				E0EAFFC01D05D9C0009D0FCB /* FMDB.framework */,
+				E0EAFFC11D05D9C0009D0FCB /* GDIIndexBar.framework */,
+				E0EAFFC21D05D9C0009D0FCB /* Godzippa.framework */,
+				E0EAFFC31D05D9C0009D0FCB /* GPUImage.framework */,
+				E0EAFFC41D05D9C0009D0FCB /* JSONKit.framework */,
+				E0EAFFC51D05D9C0009D0FCB /* JXHTTP.framework */,
+				E0EAFFC61D05D9C0009D0FCB /* libPhoneNumber_iOS.framework */,
+				E0EAFFC71D05D9C0009D0FCB /* LinqToObjectiveC.framework */,
+				E0EAFFC81D05D9C0009D0FCB /* MACircleProgressIndicator.framework */,
+				E0EAFFC91D05D9C0009D0FCB /* Masonry.framework */,
+				E0EAFFCA1D05D9C0009D0FCB /* MBProgressHUD.framework */,
+				E0EAFFCB1D05D9C0009D0FCB /* MGSwipeTableCell.framework */,
+				E0EAFFCC1D05D9C0009D0FCB /* Moya.framework */,
+				E0EAFFCD1D05D9C0009D0FCB /* NHAppCore.framework */,
+				E0EAFFCE1D05D9C0009D0FCB /* NHBottomLoadingView.framework */,
+				E0EAFFCF1D05D9C0009D0FCB /* NHImageViewController.framework */,
+				E0EAFFD01D05D9C0009D0FCB /* NHLabel.framework */,
+				E0EAFFD11D05D9C0009D0FCB /* NHMapViewController.framework */,
+				E0EAFFD21D05D9C0009D0FCB /* NHMessageBubbleCell.framework */,
+				E0EAFFD31D05D9C0009D0FCB /* NHMultipleImageView.framework */,
+				E0EAFFD41D05D9C0009D0FCB /* NHRecorder.framework */,
+				E0EAFFD51D05D9C0009D0FCB /* NHRefreshView.framework */,
+				E0EAFFD61D05D9C0009D0FCB /* NHSearchController.framework */,
+				E0EAFFD71D05D9C0009D0FCB /* NHSelectorView.framework */,
+				E0EAFFD81D05D9C0009D0FCB /* NHTextField.framework */,
+				E0EAFFD91D05D9C0009D0FCB /* NHTimer.framework */,
+				E0EAFFDA1D05D9C0009D0FCB /* NHTutorialView.framework */,
+				E0EAFFDB1D05D9C0009D0FCB /* NHWebViewController.framework */,
+				E0EAFFDC1D05D9C0009D0FCB /* NMessengerController.framework */,
+				E0EAFFDD1D05D9C0009D0FCB /* NPageController.framework */,
+				E0EAFFDE1D05D9C0009D0FCB /* NTextView.framework */,
+				E0EAFFDF1D05D9C0009D0FCB /* ORStackView.framework */,
+				E0EAFFE01D05D9C0009D0FCB /* PulsingHalo.framework */,
+				E0EAFFE11D05D9C0009D0FCB /* Reachability.framework */,
+				E0EAFFE21D05D9C0009D0FCB /* ReactiveCocoa.framework */,
+				E0EAFFE31D05D9C0009D0FCB /* Result.framework */,
+				E0EAFFE41D05D9C0009D0FCB /* RxCocoa.framework */,
+				E0EAFFE51D05D9C0009D0FCB /* RxSwift.framework */,
+				E0EAFFE61D05D9C0009D0FCB /* SocketRocket.framework */,
+				E0EAFFE71D05D9C0009D0FCB /* Spectacles.framework */,
+				E0EAFFE81D05D9C0009D0FCB /* TMTumblrSDK.framework */,
+				E0EAFFE91D05D9C0009D0FCB /* TTTAttributedLabel.framework */,
+				E0EAFFEA1D05D9C1009D0FCB /* UIActionSheet_Blocks.framework */,
+				E0EAFFEB1D05D9C1009D0FCB /* UIAlertView_Blocks.framework */,
+				E0EAFFEC1D05D9C1009D0FCB /* UICKeyChainStore.framework */,
+				E0EAFFED1D05D9C1009D0FCB /* VK_ios_sdk.framework */,
+				E0EAFFEE1D05D9C1009D0FCB /* WCFastCell.framework */,
+				E0EAFFEF1D05D9C1009D0FCB /* WYPopoverController.framework */,
+				E06738F21D0041F40042376A /* MapKit.framework */,
+				E07628A1BB431DF5484923E8 /* Pods_Shaker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D82FE193D129A5D287242699 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35A2089D2A8229D420EA4B7F /* Pods-Shaker.debug.xcconfig */,
+				1C4929E8616AC9128B34D0D7 /* Pods-Shaker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E06738CF1D0039890042376A = {
+			isa = PBXGroup;
+			children = (
+				E0EAFFB01D05C0B4009D0FCB /* Networking */,
+				E06738F11D003A110042376A /* Helpers */,
+				E06738F01D003A0A0042376A /* Stores */,
+				E06738EF1D0039FF0042376A /* Controllers */,
+				E06738EE1D0039F60042376A /* Views */,
+				E06738ED1D0039E80042376A /* Models */,
+				E06738DA1D0039890042376A /* shaker_full */,
+				E06738D91D0039890042376A /* Products */,
+				D82FE193D129A5D287242699 /* Pods */,
+				668DC6C5894B2025E5483BDA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E06738D91D0039890042376A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E06738D81D0039890042376A /* Shaker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E06738DA1D0039890042376A /* shaker_full */ = {
+			isa = PBXGroup;
+			children = (
+				E06738F41D0042040042376A /* shaker_full.entitlements */,
+				E06738DB1D0039890042376A /* AppDelegate.swift */,
+				E06738DF1D0039890042376A /* Main.storyboard */,
+				E06738E21D0039890042376A /* Assets.xcassets */,
+				E06738E41D0039890042376A /* LaunchScreen.storyboard */,
+				E06738E71D0039890042376A /* Info.plist */,
+			);
+			path = shaker_full;
+			sourceTree = "<group>";
+		};
+		E06738ED1D0039E80042376A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E06738EE1D0039F60042376A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E06738EF1D0039FF0042376A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E06738DD1D0039890042376A /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E06738F01D003A0A0042376A /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		E06738F11D003A110042376A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E0EA002D1D05DD5E009D0FCB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E0EA002E1D05DD69009D0FCB /* AppSetup.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		E0EAFFB01D05C0B4009D0FCB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E0EA002D1D05DD5E009D0FCB /* App */,
+				E0EAFFB11D05C0D1009D0FCB /* ShakerAPI.swift */,
+				E0EA00301D06E7FC009D0FCB /* Networking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E06738D71D0039890042376A /* Shaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E06738EA1D0039890042376A /* Build configuration list for PBXNativeTarget "Shaker" */;
+			buildPhases = (
+				295C47A07B06E86CC38411AF /* [CP] Check Pods Manifest.lock */,
+				E06738D41D0039890042376A /* Sources */,
+				E06738D51D0039890042376A /* Frameworks */,
+				E06738D61D0039890042376A /* Resources */,
+				AF0E410CEE93CEE6AE47943C /* [CP] Embed Pods Frameworks */,
+				3EA4608271AA8F0C66977A06 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shaker;
+			productName = shaker_full;
+			productReference = E06738D81D0039890042376A /* Shaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E06738D01D0039890042376A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Andrey Egorov";
+				TargetAttributes = {
+					E06738D71D0039890042376A = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = ZSVD2YK3PX;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = E06738D31D0039890042376A /* Build configuration list for PBXProject "shaker_full" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E06738CF1D0039890042376A;
+			productRefGroup = E06738D91D0039890042376A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E06738D71D0039890042376A /* Shaker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E06738D61D0039890042376A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E06738E61D0039890042376A /* LaunchScreen.storyboard in Resources */,
+				E06738E31D0039890042376A /* Assets.xcassets in Resources */,
+				E06738E11D0039890042376A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		295C47A07B06E86CC38411AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3EA4608271AA8F0C66977A06 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Shaker/Pods-Shaker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF0E410CEE93CEE6AE47943C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Shaker/Pods-Shaker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E06738D41D0039890042376A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0EAFFB21D05C0D1009D0FCB /* ShakerAPI.swift in Sources */,
+				E0EA00311D06E7FC009D0FCB /* Networking.swift in Sources */,
+				E06738DE1D0039890042376A /* ViewController.swift in Sources */,
+				E06738DC1D0039890042376A /* AppDelegate.swift in Sources */,
+				E0EA002F1D05DD69009D0FCB /* AppSetup.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E06738DF1D0039890042376A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E06738E01D0039890042376A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E06738E41D0039890042376A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E06738E51D0039890042376A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E06738E81D0039890042376A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E06738E91D0039890042376A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E06738EB1D0039890042376A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35A2089D2A8229D420EA4B7F /* Pods-Shaker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = shaker_full/shaker_full.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/CountryPicker",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKLoginKit",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKShareKit",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FLAnimatedImage",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FLKAutoLayout",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FMDB",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/GDIIndexBar",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/GPUImage",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/JSONKit",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/JXHTTP",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/LinqToObjectiveC",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/MACircleProgressIndicator",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Masonry",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/MBProgressHUD",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/MGSwipeTableCell",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHAppCore",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHBottomLoadingView",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHImageViewController",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHLabel",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHMapViewController",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHMessageBubbleCell",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHMultipleImageView",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHRecorder",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHRefreshView",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHSearchController",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHSelectorView",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHTextField",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHTimer",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHTutorialView",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHWebViewController",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NMessengerController",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NPageController",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NTextView",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ORStackView",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/PulsingHalo",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Reachability",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ReactiveCocoa",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/SocketRocket",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Spectacles",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/TMTumblrSDK",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/TTTAttributedLabel",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/UIActionSheet+Blocks",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/UIAlertView+Blocks",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/UICKeyChainStore",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/VK-ios-sdk",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/WCFastCell",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/WYPopoverController",
+				);
+				INFOPLIST_FILE = shaker_full/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ITC-Project-LLC.Shaker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E06738EC1D0039890042376A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C4929E8616AC9128B34D0D7 /* Pods-Shaker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = shaker_full/shaker_full.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/CountryPicker",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKLoginKit",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKShareKit",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FLAnimatedImage",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FLKAutoLayout",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FMDB",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/GDIIndexBar",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/GPUImage",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/JSONKit",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/JXHTTP",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/LinqToObjectiveC",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/MACircleProgressIndicator",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Masonry",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/MBProgressHUD",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/MGSwipeTableCell",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHAppCore",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHBottomLoadingView",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHImageViewController",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHLabel",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHMapViewController",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHMessageBubbleCell",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHMultipleImageView",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHRecorder",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHRefreshView",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHSearchController",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHSelectorView",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHTextField",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHTimer",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHTutorialView",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NHWebViewController",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NMessengerController",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NPageController",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/NTextView",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ORStackView",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/PulsingHalo",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Reachability",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ReactiveCocoa",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/SocketRocket",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Spectacles",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/TMTumblrSDK",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/TTTAttributedLabel",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/UIActionSheet+Blocks",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/UIAlertView+Blocks",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/UICKeyChainStore",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/VK-ios-sdk",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/WCFastCell",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/WYPopoverController",
+				);
+				INFOPLIST_FILE = shaker_full/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ITC-Project-LLC.Shaker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E06738D31D0039890042376A /* Build configuration list for PBXProject "shaker_full" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E06738E81D0039890042376A /* Debug */,
+				E06738E91D0039890042376A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E06738EA1D0039890042376A /* Build configuration list for PBXNativeTarget "Shaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E06738EB1D0039890042376A /* Debug */,
+				E06738EC1D0039890042376A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E06738D01D0039890042376A /* Project object */;
+}

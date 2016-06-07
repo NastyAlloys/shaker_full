@@ -1,0 +1,13 @@
+/* 
+  NHBottomLoadingView.strings
+  Pods
+
+  Created by Sergey Minakov on 06.05.15.
+
+*/
+
+
+"default.failed" = "Ошибка при загрузке";
+"default.failed-connection" = "Нет подключения к сети интернет";
+"default.subtext" = "Нажмите, чтобы повторить";
+"default.noresults" = "Нет результатов";

@@ -1,0 +1,33 @@
+{
+  "name": "NHImageViewController",
+  "version": "0.5.0",
+  "summary": "Custom image viewer controller",
+  "homepage": "https://github.com/naithar/NHImageViewController",
+  "license": "MIT",
+  "authors": {
+    "Naithar": "devias.naith@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/naithar/NHImageViewController.git",
+    "tag": "0.5.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resources": [
+    "Pod/Assets/*"
+  ],
+  "dependencies": {
+    "MACircleProgressIndicator": [
+      "~> 1.0.0"
+    ],
+    "AFNetworking": [
+
+    ],
+    "FLAnimatedImage": [
+      "~> 1.0"
+    ]
+  }
+}

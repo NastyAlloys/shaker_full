@@ -1,0 +1,25 @@
+{
+  "name": "NHSearchController",
+  "version": "0.6.7",
+  "summary": "custom search view with result table view",
+  "homepage": "https://github.com/naithar/NHSearchController",
+  "license": "MIT",
+  "authors": {
+    "Naithar": "devias.naith@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/naithar/NHSearchController.git",
+    "tag": "0.6.7"
+  },
+  "social_media_url": "https://twitter.com/naithar",
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resources": [
+    "Pod/Assets/*"
+  ],
+  "public_header_files": "Pod/Classes/**/*.h",
+  "frameworks": "UIKit"
+}

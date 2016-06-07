@@ -1,0 +1,13 @@
+/* 
+  NHBottomLoadingView.strings
+  Pods
+
+  Created by Sergey Minakov on 06.05.15.
+
+*/
+
+
+"default.failed" = "Error occured while loading";
+"default.failed-connection" = "No internet connection";
+"default.subtext" = "Please tap to retry";
+"default.noresults" = "No results";

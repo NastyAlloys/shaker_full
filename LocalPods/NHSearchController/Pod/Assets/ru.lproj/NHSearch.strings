@@ -1,0 +1,10 @@
+/* 
+  NHSearch.strings
+  Pods
+
+  Created by Sergey Minakov on 13.08.15.
+
+*/
+
+"NHSearch.placeholder" = "Поиск";
+"NHSearch.close" = "Отменить";

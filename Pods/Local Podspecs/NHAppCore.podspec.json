@@ -1,0 +1,41 @@
+{
+  "name": "NHAppCore",
+  "version": "0.1.9",
+  "summary": "A short description of NHAppCore.",
+  "license": "MIT",
+  "authors": {
+    "Naithar": "devias.naith@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/dekakisalove/shaker_core.git",
+    "tag": "0.1.9"
+  },
+  "homepage": "https://github.com/shakerapp/shaker_core",
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "NHAppCore/Pod/Classes/**/*",
+  "public_header_files": "NHAppCore/Pod/Classes/**/*.h",
+  "frameworks": [
+    "UIKit",
+    "CFNetwork",
+    "Security",
+    "Foundation"
+  ],
+  "libraries": "icucore",
+  "dependencies": {
+    "AFNetworking": [
+      "~> 2"
+    ],
+    "UICKeyChainStore": [
+      ">=2.0"
+    ],
+    "Reachability": [
+      ">= 3.2"
+    ],
+    "NHSearchController": [
+
+    ]
+  }
+}

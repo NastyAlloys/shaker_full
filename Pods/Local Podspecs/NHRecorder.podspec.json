@@ -1,0 +1,41 @@
+{
+  "name": "NHRecorder",
+  "version": "0.6.2",
+  "summary": "Custom ios camera",
+  "homepage": "https://github.com/naithar/NHRecorder",
+  "license": "MIT",
+  "authors": {
+    "Naithar": "devias.naith@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/naithar/NHRecorder.git",
+    "tag": "0.6.2"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resources": [
+    "Pod/Assets/Filters/*",
+    "Pod/Assets/*"
+  ],
+  "public_header_files": "Pod/Classes/**/*.h",
+  "private_header_files": "Pod/Classes/Private/*.h",
+  "dependencies": {
+    "GPUImage": [
+
+    ]
+  },
+  "frameworks": [
+    "UIKit",
+    "CoreGraphics",
+    "Foundation",
+    "QuartzCore",
+    "MobileCoreServices",
+    "MediaPlayer",
+    "CoreMedia",
+    "AssetsLibrary",
+    "AVFoundation"
+  ]
+}
